@@ -27,8 +27,10 @@ public class DoWhileCuti08 {
                     System.out.print("Silakan masukkan kembali jumlah hari: ");
                     jumlahHari = scan.nextInt();
                 }
-            } else {
+            } else if (konfirmasi.equalsIgnoreCase("t")) {
                 break;
+            } else {
+                System.out.println("Input konfirmasi yang Anda masukkan salah.");
             }
         } while (jatahCuti > 0);
     }
