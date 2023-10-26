@@ -5,7 +5,6 @@ public class utspdaspro108 {
         int jumlahPeserta;
         System.out.print("jumlah peserta yang mengikuti : ");
         float jmlPeserta = input08.nextFloat();
-
         System.out.print("nilai tes potensi akademik : ");
         float potensiAkademik = input08.nextFloat();
         System.out.print("nilai tes bahasa Inggris : ");
@@ -48,7 +47,7 @@ public class utspdaspro108 {
             nilaiMutu = 0;
         }
         
-        String message = total >75 ? "lolos" : "tidak lolos";
+        String message = total <75 ? "lolos" : "tidak lolos";
         System.out.println("Nilai rata rata = " + total + " sehingga " + message);
 
         System.out.println("Nilai akhir = " + total);
