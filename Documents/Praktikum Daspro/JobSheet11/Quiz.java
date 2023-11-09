@@ -13,12 +13,20 @@ public class Quiz {
             System.out.print("Tebak angka (1-10): "); 
             int answer = input.nextInt(); 
             input.nextLine(); 
-            success = (answer == number); 
+
+            if (answer == number){
+                System.out.println("Benar");
+                success = true;
+            } else if (answer < number){
+                System.out.println("Tebakan yang dimasukan lebih kecil");
+            } else {
+                System.out.println("Tebakan yang lebih besar");
+            }
 
                 } while(!success); 
                 System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?"); 
                 menu = input.nextLine().charAt(0); 
-} while(menu=='y' || menu=='Y'); 
+            } while(menu=='y' || menu=='Y'); 
 
     }
 }
